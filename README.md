@@ -241,15 +241,15 @@ console.log(qdata.month); // "september"
     <b><a href="#table-of-contents">↥ Назад наверх</a></b>
 </div>
 
-## # 3. NODE.JS DATA TYPES
+## # 3. ТИПЫ ДАННЫХ В NODE.JS 
 
 <br/>
 
-## Q. What are the data types in Node.js?
+## Q. Какие типы данных в Node.js?
 
-Just like JS, there are two categories of data types in Node: Primitives and Objects.
+Также как и в JS есть две категории типов данных в Node: Примитивы и Объекты.
 
-**1. Primitives:**
+**1. Примитивы:**
 
 * String
 * Number
@@ -259,33 +259,32 @@ Just like JS, there are two categories of data types in Node: Primitives and Obj
 * Null
 * Symbol
 
-**2. Objects:**
+**2. Объекты:**
 
 * Function
 * Array
 * Buffer
 
 <div align="right">
-    <b><a href="#table-of-contents">↥ back to top</a></b>
+    <b><a href="#table-of-contents">↥ назад наверх</a></b>
 </div>
 
-## Q. Explain String data type in Node.js?
+## Q. Объяснение типа данных String в Node.js?
 
-Strings in Node.js are sequences of unicode characters. Strings can be wrapped in a single or double quotation marks.
-Javascript provide many functions to operate on string, like indexOf(), split(), substr(), length.
+Строки в Node.js - это последовательности символов юникода. Строки могут быть обернуты в одинарные или двойные кавычки.
+JavaScript предоставляет множество функций для операций над строками, такие как indexOf(), split(), substr(), length.
 
-**String functions:**
+**Функции строк:**
 
-|Function   | Description               |
-|-----------|---------------------------|
-|charAt()   |It is useful to find a specific character present in a string.|
-|concat()   |It is useful to concat more than one string.|
-|indexOf()  |It is useful to get the index of a specified character or a part of the string.|
-|match()    |It is useful to match multiple strings.|
-|split()    |It is useful to split the string and return an array of string.|
-|join()     |It is useful to join the array of strings and those are separated by comma (,) operator.|
+|Функция    | Описание               |
+|-----------|---------------------------------------------------------------------------------------|
+|charAt()   |Полезна, чтобы найти символ в определенной позиции в строке.|
+|concat()   |Полезна, чтобы соединить больше, чем одну строку.|
+|indexOf()  |Полезна, чтобы найти индекс специфичного символа или части этой строки.|
+|match()    |Полезна, чтобы сопоставить множество строкIt is useful to match multiple strings.|
+|split()    |Полезна, чтобы разбить строку на массив строк.|
 
-**Example:**
+**Пример:**
 
 ```js
 /** 
@@ -299,14 +298,16 @@ console.log("Concat Using Function :" , (str1.concat(str2)));
 ```
 
 <div align="right">
-    <b><a href="#table-of-contents">↥ back to top</a></b>
+    <b><a href="#table-of-contents">↥ Назад наверх</a></b>
 </div>
 
-## Q. Explain Number data type in Node.js?
+## Q. Объяснение типа данных Number в Node.js?
 
-The number data type in Node.js is 64 bits floating point number both positive and negative. The parseInt() and parseFloat() functions are used to convert to number, if it fails to convert into a number then it returns `NaN`.
+Тип данных Number в Node.js представляет собой 64-битное число с плавающей точкой, которое может быть как положительным,
+так и отрицательным. Функции parseInt() и parseFloat() полезны, чтобы конвертировать строку в число. В случае, если данные
+функции не способны преобразовать в число, они возвращают `NaN`.
 
-**Example:**
+**Пример:**
 
 ```js
 /**
@@ -334,14 +335,14 @@ console.log(-5 / 0); // -Infinity
 ```
 
 <div align="right">
-    <b><a href="#table-of-contents">↥ back to top</a></b>
+    <b><a href="#table-of-contents">↥ назада наверх</a></b>
 </div>
 
-## Q. Explain BigInt data type in Node.js?
+## Q. Объяснение типа данных BigInt в Node.js?
 
-A BigInt value, also sometimes just called a BigInt, is a bigint primitive, created by appending **n** to the end of an integer literal, or by calling the BigInt() function ( without the new operator ) and giving it an integer value or string value.
+Значение типа BigInt, также иногла называемое просто BigInt - это bigint примитив, созданный добавлением в конец **n** числового литерала или вызовом функции BigInt() (без оператора new) с передачем в функцию integer-a или строкового значения.
 
-**Example:**
+**Пример:**
 
 ```js
 /**
@@ -356,16 +357,18 @@ typeof BigInt('1') === 'bigint'  // true
 ```
 
 <div align="right">
-    <b><a href="#table-of-contents">↥ back to top</a></b>
+    <b><a href="#table-of-contents">↥ назад наверх</a></b>
 </div>
 
-## Q. Explain Boolean data type in Node.js?
+## Q. Объяснение типа данных Boolean в Node.js?
 
-Boolean data type is a data type that has one of two possible values, either true or false. In programming, it is used in logical representation or to control program structure.
+Тип данных Boolean - это тип данных, который может иметь одно из двух возможных значений: true или false.
+В программировании используется для логического представления или для управления структурой программы.
 
-The boolean() function is used to convert any data type to a boolean value. According to the rules, false, 0, NaN, null, undefined, empty string evaluate to false and other values evaluates to true.
+Функция Boolean() используется для преобразования какого-либо типа данных в значение boolean. Согласно правилам, false,
+0, NaN, null, undefined, пустая строка преобразуется в false, а все остальные значения - в true.
 
-**Example:**
+**Примеры:**
 
 ```js
 /**
@@ -385,14 +388,15 @@ console.log(!false); // true
 ```
 
 <div align="right">
-    <b><a href="#table-of-contents">↥ back to top</a></b>
+    <b><a href="#table-of-contents">↥ назад наверх</a></b>
 </div>
 
-## Q. Explain `Undefined` and `Null` data type in Node.js?
+## Q. Объяснение типов данных `Undefined` и `Null` в Node.js?
 
-In node.js, if a variable is defined without assigning any value, then that will take **undefined** as value. If we assign a null value to the variable, then the value of the variable becomes **null**.
+В node.js, если переменная определена без присвоения какого-либо значения, то она получает в качестве значения **undefined**.
+Если мы присваиваем занчение null переменной, то значение переменной становится **null**.
 
-**Example:**
+**Пример:**
 
 ```js
 /**
@@ -406,14 +410,15 @@ console.log(y); // null
 ```
 
 <div align="right">
-    <b><a href="#table-of-contents">↥ back to top</a></b>
+    <b><a href="#table-of-contents">↥ назад наверх</a></b>
 </div>
 
-## Q. Explain Symbol data type in Node.js?
+## Q. Объяснение типа данных Symbol в Node.js?
 
-Symbol is an immutable primitive value that is unique. It\'s a very peculiar data type. Once you create a symbol, its value is kept private and for internal use.
+Symbol - это иммутабельное значение, которое уникально. Это очень своеобразный тип данных. Как только вы создаете symbol,
+его значение сохраняется приватным (private) и для внутреннего использования.
 
-**Example:**
+**Пример:**
 
 ```js
 /**
@@ -428,35 +433,37 @@ person[NAME] // 'Ritika Bhavsar'
 ```
 
 <div align="right">
-    <b><a href="#table-of-contents">↥ back to top</a></b>
+    <b><a href="#table-of-contents">↥ назад наверх</a></b>
 </div>
 
-## Q. Explain function in Node.js?
+## Q. Объяснение function в Node.js?
 
-Functions are first class citizens in Node\'s JavaScript, similar to the browser\'s JavaScript. A function can have attributes and properties also. It can be treated like a class in JavaScript.
+Функции являются объектами первого класса в node.js, также как и в браузерном JavaScript. Функции также могут иметь атрибуты и свойства.
+С ними можно производить все те же действия, что и с методами в JavaScript.
 
-**Example:**
+**Пример:**
 
 ```js
 /**
  * Function in Node.js
  */
 function Messsage(name) {
- console.log("Hello "+name);
+ console.log("Hello " + name);
 }
 
 Messsage("World"); // Hello World
 ```
 
 <div align="right">
-    <b><a href="#table-of-contents">↥ back to top</a></b>
+    <b><a href="#table-of-contents">↥ назад наверх</a></b>
 </div>
 
-## Q. Explain Buffer data type in Node.js?
+## Q. Объяснение типа данных Buffer в Node.js?
 
-Node.js includes an additional data type called Buffer ( not available in browser\'s JavaScript ). Buffer is mainly used to store **binary data**, while reading from a file or receiving packets over the network.
+Node.js включает допол тип данных Buffer ( недоступен в браузерном JavaScript ). Buffer в основном используется
+для хранения **бинарных данных**, пока читаете из файла или получается пакеты по сети.
 
-**Example:**
+**Пример:**
 
 ```js
 /**
@@ -470,10 +477,10 @@ console.log( str.length ); // 10
 console.log( b.length ); // 10000
 ```
 
-*Note: Buffer() is deprecated due to security and usability issues.*
+*Замечание: Buffer() deprecated из-за проблем с безопасностью и использованием.*
 
 <div align="right">
-    <b><a href="#table-of-contents">↥ back to top</a></b>
+    <b><a href="#table-of-contents">↥ назад наверх</a></b>
 </div>
 
 ## # 4. NODE.JS ARCHITECTURE
