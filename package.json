@@ -1,0 +1,23 @@
+{
+  "name": "learn-node-the-hard-way",
+  "version": "1.0.0",
+  "description": "this is the bunch of utilities which you can create by reading \"Learn more python the hard way\"",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/masiacra/learn-node.js-reading-learn-more-python-the-hard-way.git"
+  },
+  "keywords": [
+    "node.js",
+    "npm"
+  ],
+  "author": "masiacra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/masiacra/learn-node.js-reading-learn-more-python-the-hard-way/issues"
+  },
+  "homepage": "https://github.com/masiacra/learn-node.js-reading-learn-more-python-the-hard-way#readme"
+}
