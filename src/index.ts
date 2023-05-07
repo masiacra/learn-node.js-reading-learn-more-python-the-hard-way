@@ -1,5 +1,1 @@
-const { getCLIVariables } = require('./ex4/helpers');
-
-module.exports = {
-  getCLIVariables,
-};
+export { getCLIVariables } from './ex4/helpers';
